@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-slim
 
-ENV SONAR_SCANNER_VERSION 3.3.0.1492
+ENV SONAR_SCANNER_VERSION 4.1.0.1829
 ENV SONAR_OPTS ''
 
 RUN apt-get update && apt-get install -y wget git openssh-client
