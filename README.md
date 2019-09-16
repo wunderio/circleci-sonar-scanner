@@ -15,8 +15,6 @@ Add job to `.circleci/config.yml`:
 analyze:
     docker:
       - image: wunderio/circleci-sonar-scanner
-        environment:
-          PROJECT_KEY: project-name-in-sonar
     steps:
       - checkout
       # Run sonar scanner on project.
