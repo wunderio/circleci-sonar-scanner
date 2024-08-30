@@ -1,10 +1,11 @@
 FROM openjdk:24-slim-bullseye
 
-ENV SONAR_SCANNER_VERSION 6.1.0.4477
+ENV SONAR_SCANNER_VERSION 6.0.0.4432
 ENV SONAR_OPTS ''
 
 RUN apt-get update && apt-get install -y wget git openssh-client unzip nodejs
 RUN wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip
+
 RUN apt-get remove -y wget && apt-get purge
 
 RUN unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux
