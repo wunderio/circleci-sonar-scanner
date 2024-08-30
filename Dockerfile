@@ -1,6 +1,6 @@
-FROM openjdk:8-jre-slim
+FROM openjdk:24-slim-bullseye
 
-ENV SONAR_SCANNER_VERSION 4.1.0.1829
+ENV SONAR_SCANNER_VERSION 6.1.0.4477
 ENV SONAR_OPTS ''
 
 RUN apt-get update && apt-get install -y wget git openssh-client unzip nodejs
