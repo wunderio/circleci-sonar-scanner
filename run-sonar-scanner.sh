@@ -3,7 +3,7 @@
 set -eu
 
 if [ -n "${SONAR_TOKEN:-}" ]; then
-  SONAR_OPTS="${SONAR_OPTS} -D sonar.login=${SONAR_TOKEN}"
+  SONAR_OPTS="${SONAR_OPTS} -D sonar.token=${SONAR_TOKEN}"
 fi
 
 if [ -n "${PROJECT_KEY:-}" ]; then
