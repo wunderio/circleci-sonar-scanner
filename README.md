@@ -28,7 +28,7 @@ For more advanced cases create `sonar-scanner.properties` file or
 - run: >-
       cd /home/circleci/project/ &&
       sonar-scanner -Dsonar.host.url=$SONAR_HOST
-      -Dsonar.login=$SONAR_TOKEN
+      -Dsonar.token=$SONAR_TOKEN
       -Dsonar.php.coverage.reportPaths=/home/circleci/project/coverage.xml
       -Dsonar.projectKey=project-name-in-sonar
       -Dsonar.sources=/home/circleci/project/src
